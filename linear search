@@ -6,7 +6,7 @@ struct data
   int ar[100];
   int search;
   int loc;
-}d;
+};
 
 int find(int array[],int size,int element)
 {  int pos=-1;
@@ -35,7 +35,8 @@ int element()
    return find;
 }
 int main()
-{  d.n=size();
+{   struct data d;
+   d.n=size();
    printf("\nentrer the elements of array\n");
    for(int i=0;i<d.n;i++)
     scanf("%d",&d.ar[i]);
